@@ -1,0 +1,28 @@
+@mixin translateCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin Show {  
+  visibility: visible;
+  opacity: 1;
+}
+
+@mixin Hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@mixin resMobile {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin resDesktop {
+  @media (min-width: 600px) {
+    @content;
+  }
+}

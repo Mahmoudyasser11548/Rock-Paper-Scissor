@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="rules">
+      <div class="rules-content">
+        <div class="title">
+          <h3>Rules</h3>
+          <img src="./imgs/icon-close.svg" alt="" class="close-btn">
+        </div>
+        <img src="./imgs/image-rules.svg" alt="rules">
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="container-content">
+      <div class="header">
+        <div class="logo">
+          <img src="./imgs/logo.svg" alt="logo">
+        </div>
+        <div class="score">
+          <h4 class="score-title">score</h4>
+          <span class="score-count">0</span>
+        </div>
+      </div>
+      <div class="game-content">
+        <div class="game-bg">
+          <img src="./imgs/bg-triangle.svg" alt="">
+        </div>
+
+        <div class="game-choice game-paper" data-choice="Paper">
+          <img src="./imgs/icon-paper.svg" alt="">
+        </div>
+        <div class="game-choice game-scissors" data-choice="Scissors">
+          <img src="./imgs/icon-scissors.svg" alt="">
+        </div>
+        <div class="game-choice game-rock" data-choice="Rock">
+          <img src="./imgs/icon-rock.svg" alt="" class="game-choice-image">
+        </div>
+
+        <div class="game-choice game-computer">
+          <img src="" alt="" class="computer-choice">
+          <div class="count">0</div>
+        </div>
+
+        <div class="game-result">
+          <div class="result-title">You Win</div>
+          <button class="play-again">Play Again</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="rules-btn">Rules</div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
